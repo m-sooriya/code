@@ -1,0 +1,50 @@
+
+        .textBox {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        /* 과일 이름 레이블 스타일 */
+        .fruitLabel {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* 남은 갯수 텍스트 스타일 */
+        .remainingCount {
+            font-size: 14px;
+            color: #888;
+            font-weight: normal;
+        }
+
+        /* 반짝이는 효과 (애니메이션) */
+        .blink {
+            animation: blinkEffect 0.5s ease-in-out;
+        }
+      .textBox {
+          margin-bottom: 50px; /* 마진 버틈 50px */
+      }
+        @keyframes blinkEffect {
+            0% {
+                box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.9);
+                border-color: rgba(255, 255, 0, 0.9);
+            }
+            50% {
+                box-shadow: 0 0 20px 5px rgba(255, 215, 0, 1);
+                border-color: rgba(255, 215, 0, 1);
+            }
+            100% {
+                box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.9);
+                border-color: rgba(255, 255, 0, 0.9);
+            }
+        }
